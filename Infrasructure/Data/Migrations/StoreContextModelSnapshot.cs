@@ -28,6 +28,7 @@ namespace Infrasructure.Data.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
+                        .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PictureUrl")
@@ -35,7 +36,7 @@ namespace Infrasructure.Data.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("ProductBrandId")
                         .HasColumnType("INTEGER");
