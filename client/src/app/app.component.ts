@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { IProduct } from './modules/product';
-import { IPagination } from './modules/pagination';
+import { IProduct } from './shared/modules/product';
+import { IPagination } from './shared/modules/pagination';
 
 @Component({
   selector: 'app-root',
