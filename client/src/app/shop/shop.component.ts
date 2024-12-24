@@ -49,7 +49,7 @@ export class ShopComponent implements OnInit {
       console.log(error);
     });
   }
-  
+
   getTypes() {
     this.shopService.getTypes().subscribe(response => {
       this.types = [{ id: 0, name: 'All' }, ...response];
@@ -74,7 +74,7 @@ export class ShopComponent implements OnInit {
   }
 
   onPageChanged(event: any) {
-    this.shopParams.pageNumber = event.page;
+    this.shopParams.pageNumber = event;
     this.getProducts();
   }
 
