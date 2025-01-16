@@ -359,3 +359,4 @@ MigrationBackup/
 
 # vscode config folder
 .config/
+.codegpt
